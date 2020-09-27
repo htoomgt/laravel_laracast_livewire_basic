@@ -43,4 +43,27 @@ class ContactFormTest extends TestCase
                    $mail->subject === 'Testing';
         });
     }
+
+    public function testContactFormNameFieldIsRequired()
+    {
+        Livewire::test(ContactForm::class)
+                    ->set('email', 'htoo.mt@blueplanet.com.mm')
+                    ->set('subject', 'Testing')
+                    ->set('message', 'This is a testing message')
+                    ->call('submitForm')
+                    ->assertHasErrors(['name' => 'required']);
+
+    }
+
+    public function testContactFormMessageFieldHasMinChar()
+    {
+        Livewire::test(ContactForm::class)
+                    ->set('name', 'Htoo Maung Thait')
+                    ->set('email', 'htoo.mt@blueplanet.com.mm')
+                    ->set('subject', 'Testing')
+                    ->set('message', 'This')
+                    ->call('submitForm')
+                    ->assertHasErrors(['message' => 'min']);
+
+    }
 }

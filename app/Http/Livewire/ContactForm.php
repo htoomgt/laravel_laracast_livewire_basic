@@ -18,7 +18,7 @@ class ContactForm extends Component
         'name' => 'required',
         'email' => 'required|email',
         'subject' => 'required',
-        'message' => 'required|max:1024'
+        'message' => 'required|min:5|max:1024'
     ];
 
     public function updated($propertyName)
