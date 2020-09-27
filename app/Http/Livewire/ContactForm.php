@@ -2,6 +2,8 @@
 
 namespace App\Http\Livewire;
 
+use App\Mail\ContactForm as MailContactForm;
+use Illuminate\Support\Facades\Mail;
 use Livewire\Component;
 
 class ContactForm extends Component
@@ -31,7 +33,10 @@ class ContactForm extends Component
         $contact['name'] = $this->name;
         $contact['email'] = $this->email;
         $contact['subject'] = $this->subject;
-        $contact['message'] = $this->message;
+        $contact['bodyMessage'] = $this->message;
+        $toName = "Htoo Maung Thait (BP)";
+        $toEmail = "htoo.mt@blueplanet.com.mm";
+
 
         $this->resetForm();
         $this->successMessage = "Your email has been sent successfully!";
@@ -39,6 +44,14 @@ class ContactForm extends Component
         sleep(1);
 
         //process email sending
+        /* Mail::send('emails.contact_mail', $contact, function($message) use($toName, $toEmail){
+            $message->to($toEmail, $toName)
+                    ->subject('Livewire Testing');
+
+            $message->from(env('MAIL_FROM_ADDRESS'), env('MAIL_FROM_NAME'));
+        }); */
+
+        Mail::to($toEmail)->send(new MailContactForm($contact));
     }
 
     public function render()
