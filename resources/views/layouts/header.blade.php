@@ -30,7 +30,7 @@
 </head>
 <body>
     <div class="container main" role="main">
-        <h1 class="mt-2"> Livewire form testing </h1>
+        <h1 class="mt-2"> Laravel Livewire Basics Study from Laracast </h1>
         <hr/>
 
 
