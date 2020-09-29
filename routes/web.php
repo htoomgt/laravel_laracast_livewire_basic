@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\SearchDropdownController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,9 +17,7 @@ use App\Http\Controllers\SearchDropdownController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [HomeController::class, 'showLandingPage']);
 
 Route::get('/contact_form', [ContactController::class, 'showContactForm']);
 Route::post('/send_contact_form', [ContactController::class, 'sendContactMessage'])->name('send_contact_message');
