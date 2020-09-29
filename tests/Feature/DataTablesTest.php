@@ -103,7 +103,7 @@ class DataTablesTest extends TestCase
 
     /***
      * To test datatable sorting name ascending correctly
-    */
+     */
     public function testDatatableSortNameAscCorrectly()
     {
         $userC = User::create([
