@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Laravel Livewire</title>
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+        <!-- Styles -->
+        <style>
+            body {
+                font-family: 'Nunito';
+            }
+        </style>
+        <!-- Livewire Styles -->
+<style>
+    [wire\:loading], [wire\:loading\.delay] {
+        display: none;
+    }
+
+    [wire\:offline] {
+        display: none;
+    }
+
+    [wire\:dirty]:not(textarea):not(input):not(select) {
+        display: none;
+    }
+</style>
+    </head>
+    <body class="antialiased">
+        <div wire:id="ENE2FURXJXfed5uVC3Ke" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;ENE2FURXJXfed5uVC3Ke&quot;,&quot;name&quot;:&quot;counter&quot;,&quot;locale&quot;:&quot;en&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;f29edd78&quot;,&quot;data&quot;:{&quot;count&quot;:0,&quot;name&quot;:null},&quot;dataMeta&quot;:[],&quot;checksum&quot;:&quot;8b344f9b53cb6ce64f628e59b26248bd0086ce06c118a478300e6d0bcf457126&quot;}}">
+    <span>0</span>
+    <button wire:click="decrement"> - </button>
+    <button wire:click="increment"> + </button>
+
+</div>
+
+        <!-- Livewire Scripts -->
+
+<script src="/livewire/livewire.js?id=5b362d451997b18fadde" data-turbolinks-eval="false"></script>
+<script data-turbolinks-eval="false">
+    if (window.livewire) {
+        console.warn('Livewire: It looks like Livewire\'s @livewireScripts JavaScript assets have already been loaded. Make sure you aren\'t loading them twice.')
+    }
+
+    window.livewire = new Livewire();
+    window.Livewire = window.livewire;
+    window.livewire_app_url = '';
+    window.livewire_token = 'uUMOY6KzkWTnHnyZG39Ns5Zxe5WkTVKB75Br8GcH';
+
+    /* Make Alpine wait until Livewire is finished rendering to do its thing. */
+    window.deferLoadingAlpine = function (callback) {
+        window.addEventListener('livewire:load', function () {
+            callback();
+        });
+    };
+
+    document.addEventListener("DOMContentLoaded", function () {
+        window.livewire.start();
+    });
+</script>
+    </body>
+</html>

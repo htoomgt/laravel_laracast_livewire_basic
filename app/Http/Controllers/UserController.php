@@ -9,9 +9,7 @@ class UserController extends Controller
 {
     public function showUserList()
     {
-        $users = User::paginate(10);
-
-
+        $users = User::query()->paginate(10);
         return view('user.user_list', compact('users'));
     }
 }
