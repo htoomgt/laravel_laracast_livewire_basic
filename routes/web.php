@@ -6,6 +6,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\SearchDropdownController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,3 +30,13 @@ Route::get('/dropdown_page', [SearchDropdownController::class, 'showSearchDropdo
 Route::get('/user_list', [UserController::class, 'showUserList']);
 
 Route::get('/comments', [CommentController::class, 'showComments']);
+
+/*** post related routes start ***/
+Route::get('/post/{post}', [PostController::class, 'showPostById'])->name('post.show');
+
+Route::post('/post/{post}/comment', [PostController::class, 'makeCommentOnPost'])->name('comment.store');
+
+/*** post related routes end ***/
+
+
+
