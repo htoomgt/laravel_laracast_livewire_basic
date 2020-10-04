@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CommentController;
+use App\Http\Controllers\FileUploadPageController;
 use App\Http\Controllers\PollController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
@@ -41,9 +42,11 @@ Route::post('/post/{post}/comment', [PostController::class, 'makeCommentOnPost']
 
 /*** Polling related route start ***/
 Route::get('/poll-example', [PollController::class, 'showPollExamplePage'])->name('poll.example.show');
-
-
 /*** Polling related route end ***/
+
+/*** File Upload related route start ***/
+Route::get('/file-upload-page', [FileUploadPageController::class, 'showFileUploadPage'])->name('file-upload-page.show');
+/*** File Upload related route end ***/
 
 
 
