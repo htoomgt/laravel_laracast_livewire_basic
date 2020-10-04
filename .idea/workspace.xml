@@ -20,19 +20,14 @@
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b3e9362-0add-4767-9307-a92900910fe8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/CommentSectionTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/CommentSectionTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/PollTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/PollTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,11 +157,15 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1iNvjnyHRYwzizEsiFIgaFBUPTN" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -190,7 +189,7 @@
       <workItem from="1601758825754" duration="808000" />
       <workItem from="1601761031171" duration="516000" />
       <workItem from="1601792269686" duration="244000" />
-      <workItem from="1601792542824" duration="2468000" />
+      <workItem from="1601792542824" duration="6309000" />
     </task>
     <servers />
   </component>
@@ -209,7 +208,18 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="416" y="466" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601797569957">
+      <screen x="0" y="339" width="1366" height="741" />
+    </state>
+    <state x="416" y="466" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.339.1366.741/1366.0.1920.1080@0.339.1366.741" timestamp="1601797569957" />
+    <state x="478" y="630" width="399" height="157" key="NewPhpFileDialog" timestamp="1601795727131">
+      <screen x="0" y="339" width="1366" height="741" />
+    </state>
+    <state x="478" y="630" width="399" height="157" key="NewPhpFileDialog/0.339.1366.741/1366.0.1920.1080@0.339.1366.741" timestamp="1601795727131" />
     <state x="172" y="343" key="SettingsEditor" timestamp="1601792922980">
       <screen x="0" y="339" width="1366" height="741" />
     </state>
@@ -218,9 +228,9 @@
       <screen x="0" y="339" width="1366" height="741" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.339.1366.741/1366.0.1920.1080@0.339.1366.741" timestamp="1601794554397" />
-    <state x="346" y="401" width="672" height="678" key="search.everywhere.popup" timestamp="1601794566426">
+    <state x="346" y="401" width="672" height="678" key="search.everywhere.popup" timestamp="1601798070212">
       <screen x="0" y="339" width="1366" height="741" />
     </state>
-    <state x="346" y="401" width="672" height="678" key="search.everywhere.popup/0.339.1366.741/1366.0.1920.1080@0.339.1366.741" timestamp="1601794566426" />
+    <state x="346" y="401" width="672" height="678" key="search.everywhere.popup/0.339.1366.741/1366.0.1920.1080@0.339.1366.741" timestamp="1601798070212" />
   </component>
 </project>
