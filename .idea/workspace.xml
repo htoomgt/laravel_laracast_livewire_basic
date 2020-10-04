@@ -31,9 +31,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b3e9362-0add-4767-9307-a92900910fe8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/laravel-plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CommentsSection.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/CommentsSection.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Feature/CommentSectionTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/CommentSectionTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -192,7 +190,7 @@
       <workItem from="1601758825754" duration="808000" />
       <workItem from="1601761031171" duration="516000" />
       <workItem from="1601792269686" duration="244000" />
-      <workItem from="1601792542824" duration="2070000" />
+      <workItem from="1601792542824" duration="2468000" />
     </task>
     <servers />
   </component>

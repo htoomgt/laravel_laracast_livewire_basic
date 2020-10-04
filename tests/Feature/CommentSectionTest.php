@@ -48,6 +48,11 @@ class CommentSectionTest extends TestCase
 
     }
 
+    /**
+     * To test valid comment can be posted in created page
+     *
+     * @return void
+     */
     public function testValidCommentCanBePosted()
     {
         $post = Post::create([
@@ -61,6 +66,48 @@ class CommentSectionTest extends TestCase
                 ->call('postComment')
                 ->assertSee('Comment was posted')
                 ->assertSee('This is my comment');
+    }
+
+    /**
+     * To test comment is required
+     *
+     * @return void
+     */
+    public function testCommentIsRequired()
+    {
+        $post = Post::create([
+            'title' => 'Testing Post of Test Case',
+            'content' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi debitis dolor laudantium libero maiores mollitia nesciunt numquam quaerat! Accusamus asperiores, cumque distinctio ea excepturi exercitationem nulla quam quo voluptatem voluptates!'
+        ]);
+
+        Livewire::test(CommentsSection::class)
+            ->set('post', $post)
+            ->set('comment','')
+            ->call('postComment')
+            ->assertHasErrors('comment', 'required')
+            ->assertSee('The comment field is required');
+
+    }
+
+    /**
+     * To test comment must have minimum 4 characters
+     *
+     * @return void
+     */
+    public function testCommentRequiresMinCharacter()
+    {
+        $post = Post::create([
+            'title' => 'Testing Post of Test Case',
+            'content' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi debitis dolor laudantium libero maiores mollitia nesciunt numquam quaerat! Accusamus asperiores, cumque distinctio ea excepturi exercitationem nulla quam quo voluptatem voluptates!'
+        ]);
+
+        Livewire::test(CommentsSection::class)
+            ->set('post', $post)
+            ->set('comment','abc')
+            ->call('postComment')
+            ->assertHasErrors('comment', 'min:4')
+            ->assertSee('The comment must be at least 4 characters');
+
     }
 
 
