@@ -18,6 +18,11 @@ class CommentsSection extends Component
      */
     public string $successMessage = "";
 
+    public function mount(Post $post)
+    {
+        $this->post = $post;
+    }
+
     protected array $rules = [
         'comment' => 'required|min:4',
         'post' => 'required'
