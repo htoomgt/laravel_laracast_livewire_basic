@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CommentController;
+use App\Http\Controllers\PollController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ContactController;
@@ -37,6 +38,12 @@ Route::get('/post/{post}', [PostController::class, 'showPostById'])->name('post.
 Route::post('/post/{post}/comment', [PostController::class, 'makeCommentOnPost'])->name('comment.store');
 
 /*** post related routes end ***/
+
+/*** Polling related route start ***/
+Route::get('/poll-example', [PollController::class, 'showPollExamplePage'])->name('poll.example.show');
+
+
+/*** Polling related route end ***/
 
 
 
