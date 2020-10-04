@@ -24,9 +24,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6b3e9362-0add-4767-9307-a92900910fe8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/PostEdit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/PostEdit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/post-edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/post-edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/TagsComponents.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/TagsComponents.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/TagsComponentTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/TagsComponentTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,32 +221,32 @@
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="1957" y="242" width="727" height="593" key="NewPhpClassDialog/0.339.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1601840725199" />
-    <state x="2038" y="424" width="399" height="157" key="NewPhpFileDialog" timestamp="1601804154622">
+    <state x="2038" y="424" width="399" height="157" key="NewPhpFileDialog" timestamp="1601846900866">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="478" y="630" width="399" height="157" key="NewPhpFileDialog/0.339.1366.741/1366.0.1920.1080@0.339.1366.741" timestamp="1601795727131" />
-    <state x="2038" y="424" width="399" height="157" key="NewPhpFileDialog/0.339.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1601804154622" />
+    <state x="2038" y="424" width="399" height="157" key="NewPhpFileDialog/0.339.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1601846900866" />
     <state x="172" y="343" key="SettingsEditor" timestamp="1601792922980">
       <screen x="0" y="339" width="1366" height="741" />
     </state>
     <state x="172" y="343" key="SettingsEditor/0.339.1366.741/1366.0.1920.1080@0.339.1366.741" timestamp="1601792922980" />
-    <state width="700" height="651" key="SwitcherDM" timestamp="1601843441936">
+    <state width="700" height="651" key="SwitcherDM" timestamp="1601847712114">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.339.1366.741/1366.0.1920.1080@0.339.1366.741" timestamp="1601794554397" />
-    <state width="700" height="651" key="SwitcherDM/0.339.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1601843441936" />
-    <state x="1849" y="135" width="944" height="807" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1601845888748">
+    <state width="700" height="651" key="SwitcherDM/0.339.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1601847712114" />
+    <state x="1849" y="135" width="944" height="807" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1601849722473">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state x="1849" y="135" width="944" height="807" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.339.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1601845888748" />
+    <state x="1849" y="135" width="944" height="807" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.339.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1601849722473" />
     <state x="1990" y="246" key="run.anything.popup" timestamp="1601840242004">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="1990" y="246" key="run.anything.popup/0.339.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1601840242004" />
-    <state x="1852" y="90" width="945" height="989" key="search.everywhere.popup" timestamp="1601844847474">
+    <state x="1852" y="90" width="945" height="989" key="search.everywhere.popup" timestamp="1601850042004">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="346" y="401" width="672" height="678" key="search.everywhere.popup/0.339.1366.741/1366.0.1920.1080@0.339.1366.741" timestamp="1601803243987" />
-    <state x="1852" y="90" width="945" height="989" key="search.everywhere.popup/0.339.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1601844847474" />
+    <state x="1852" y="90" width="945" height="989" key="search.everywhere.popup/0.339.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1601850042004" />
   </component>
 </project>
