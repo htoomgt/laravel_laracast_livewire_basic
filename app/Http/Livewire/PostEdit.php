@@ -4,6 +4,7 @@ namespace App\Http\Livewire;
 
 use App\Models\Post;
 use Illuminate\Support\Arr;
+use Illuminate\Support\Facades\Log;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 use Illuminate\Http\UploadedFile;
@@ -19,6 +20,7 @@ class PostEdit extends Component
     public string $successMessage = '';
     public $uploadFileExt;
     private ?array $allowedExt = [];
+    public $tempUrl;
 
     protected $rules = [
         'title' => 'required',
@@ -36,6 +38,13 @@ class PostEdit extends Component
 
     public function updatedPhoto()
     {
+        try{
+            $this->tempUrl = $this->photo->temporaryUrl();
+        }catch(\Exception $ex ){
+            $this->tempUrl = "";
+            Log::error("Photo temp url error : ".$ex->getMessage());
+        }
+
         $this->validate();
     }
 

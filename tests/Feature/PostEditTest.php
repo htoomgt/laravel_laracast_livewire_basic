@@ -69,5 +69,35 @@ class PostEditTest extends TestCase
 
     }
 
+    public function testPostEditPageUploadDoesNotWorks()
+    {
+        $post = Post::create([
+            'title' => 'Testing Post of Test Case',
+            'content' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi debitis dolor laudantium libero maiores mollitia nesciunt numquam quaerat! Accusamus asperiores, cumque distinctio ea excepturi exercitationem nulla quam quo voluptatem voluptates!'
+        ]);
+
+        Storage::fake('public');
+        $file = UploadedFile::fake()->create('document.pdf', 1000);
+
+        Livewire::test(PostEdit::class, ['post' => $post])
+            ->set('title', 'New Title')
+            ->set('content', 'New Content')
+            ->set('photo', $file)
+            ->call('submitForm')
+            ->assertSee('The photo must be an image')
+            ->assertHasErrors(['photo' => 'image']);
+
+
+        $post->refresh();
+
+        $this->assertNull($post->photo);
+        Storage::disk('public')->assertMissing($post->photo);
+
+
+
+
+
+    }
+
 
 }
