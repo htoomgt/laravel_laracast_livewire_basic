@@ -110,7 +110,7 @@
                         </div>
 
                         <div class="mt-4">
-                            @if(!empty($photo))
+                            @if($photo)
                                 <img src="{{ $tempUrl }}" alt="temp" />
                             @elseif($post->photo)
                                 <img src="{{ Storage::url($post->photo) }}" alt="cover image" />
@@ -124,7 +124,7 @@
             </div>
         </div>
     </div>
-    <div class="mt-8 border-t border-gray-200 pt-5">
+<div class="mt-8 border-t border-gray-200 pt-5">
         <div class="flex justify-end">
             <span class="ml-3 inline-flex rounded-md shadow-sm">
                 <button type="submit"

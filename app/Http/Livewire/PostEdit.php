@@ -19,8 +19,8 @@ class PostEdit extends Component
     public $photo = null;
     public string $successMessage = '';
     public $uploadFileExt;
-    private ?array $allowedExt = [];
-    public $tempUrl;
+    private ?array $allowedExt = ['jpeg', 'jpg', 'png'];
+    public $tempUrl = "";
 
     protected $rules = [
         'title' => 'required',
@@ -28,22 +28,39 @@ class PostEdit extends Component
         'photo' => 'nullable|sometimes|image|max:5000',
     ];
 
+    protected $listeners = ['refreshComponent' => '$refresh'];
+
     public function mount(Post $post)
     {
         $this->post = $post;
         $this->title = $post->title;
         $this->content = $post->content;
-        $this->allowedExt = ['jpeg', 'jpg', 'png'];
+    }
+
+    public  function refreshComponent()
+    {
+
     }
 
     public function updatedPhoto()
     {
+//        Log::debug('uploaded file extension : '. $this->photo->getClientOriginalExtension());
+//        if(!in_array($this->photo->getClientOriginalExtension(), $this->allowedExt)){
+//            Log::debug("Uploaded file extension ".$this->photo->getClientOriginalExtension()." is not allowed");
+//            $this->tempUrl = '';
+//
+//
+//        }
+
         try{
             $this->tempUrl = $this->photo->temporaryUrl();
+
         }catch(\Exception $ex ){
-            $this->tempUrl = "";
+            $this->tempUrl = '';
             Log::error("Photo temp url error : ".$ex->getMessage());
+            $this->refreshComponent();
         }
+
 
         $this->validate();
     }
