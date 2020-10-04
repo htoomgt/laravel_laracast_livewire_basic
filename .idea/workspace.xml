@@ -25,13 +25,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b3e9362-0add-4767-9307-a92900910fe8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Models/Order.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/OrderFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_04_073014_create_orders_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/PollTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/PollExample.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/PollExample.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/poll-example.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/poll-example.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/PollTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/PollTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +189,7 @@
       <workItem from="1601758825754" duration="808000" />
       <workItem from="1601761031171" duration="516000" />
       <workItem from="1601792269686" duration="244000" />
-      <workItem from="1601792542824" duration="5256000" />
+      <workItem from="1601792542824" duration="6309000" />
     </task>
     <servers />
   </component>
@@ -232,9 +228,9 @@
       <screen x="0" y="339" width="1366" height="741" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.339.1366.741/1366.0.1920.1080@0.339.1366.741" timestamp="1601794554397" />
-    <state x="346" y="401" width="672" height="678" key="search.everywhere.popup" timestamp="1601797741674">
+    <state x="346" y="401" width="672" height="678" key="search.everywhere.popup" timestamp="1601798070212">
       <screen x="0" y="339" width="1366" height="741" />
     </state>
-    <state x="346" y="401" width="672" height="678" key="search.everywhere.popup/0.339.1366.741/1366.0.1920.1080@0.339.1366.741" timestamp="1601797741674" />
+    <state x="346" y="401" width="672" height="678" key="search.everywhere.popup/0.339.1366.741/1366.0.1920.1080@0.339.1366.741" timestamp="1601798070212" />
   </component>
 </project>
