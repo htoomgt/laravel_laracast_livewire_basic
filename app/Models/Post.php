@@ -11,6 +11,10 @@ class Post extends Model
 
     protected $guarded = [];
 
+    protected $fillable = [
+        'title', 'content', 'photo'
+    ];
+
     /***
     * One to Many relationship of a post can have many comments
      */

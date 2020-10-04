@@ -17,6 +17,7 @@ class CreatePostsTable extends Migration
             $table->id();
             $table->string('title', 512);
             $table->text('content');
+            $table->string('photo',8192)->nullable();
             $table->timestamps();
         });
     }
