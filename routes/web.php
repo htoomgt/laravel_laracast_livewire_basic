@@ -34,9 +34,15 @@ Route::get('/user_list', [UserController::class, 'showUserList']);
 Route::get('/comments', [CommentController::class, 'showComments']);
 
 /*** post related routes start ***/
+Route::get('/post-list', [PostController::class, 'showPostsList'])->name('post.list.show');
+
 Route::get('/post/{post}', [PostController::class, 'showPostById'])->name('post.show');
 
 Route::post('/post/{post}/comment', [PostController::class, 'makeCommentOnPost'])->name('comment.store');
+
+Route::get('/post/{post}/edit', [PostController::class, 'editPost'])->name('post.edit');
+
+Route::patch('/post/{post}', [PostController::class, 'updatePost'])->name('post.update');
 
 /*** post related routes end ***/
 
