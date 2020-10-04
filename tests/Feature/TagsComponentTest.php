@@ -34,5 +34,35 @@ class TagsComponentTest extends TestCase
             ->assertSet('tags', json_encode(['one', 'two']));
     }
 
+    /**
+     * @test
+     */
+    public function testAddTagsCorrectly()
+    {
+        $tagA = Tag::create(['name' => 'one']);
+        $tagB = Tag::create(['name' => 'two']);
+
+        Livewire::test(TagsComponents::class)
+            ->emit('tagAdded', 'three')
+            ->assertEmitted('tagAddedFromBackend', 'three');
+
+        $this->assertDatabaseHas('tags', ['name' => 'three']);
+    }
+
+    /**
+     * @test
+     */
+    public function testRemoveTagsCorrectly()
+    {
+        $tagA = Tag::create(['name' => 'one']);
+        $tagB = Tag::create(['name' => 'two']);
+
+        Livewire::test(TagsComponents::class)
+            ->emit('tagRemoved', 'two');
+
+
+        $this->assertDatabaseMissing('tags', ['name' => 'two']);
+    }
+
 
 }
