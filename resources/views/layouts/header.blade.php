@@ -17,7 +17,7 @@
     {{--Alpine JS--}}
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.0/dist/alpine.min.js" defer></script>
     {{--Taggle JS--}}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/taggle/1.15.0/taggle.js" defer></script>
+    <script src="https://unpkg.com/taggle/src/taggle.js" defer></script>
     <style>
         .main{
             min-height: 400px;
