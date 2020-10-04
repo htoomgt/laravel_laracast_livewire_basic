@@ -21,7 +21,7 @@
                             </div>
                             <div class="ml-3">
                                 <p class="text-sm leading-5 font-medium text-green-800">
-                                    {{ $successMessage }}}
+                                    {{ $successMessage }}
                                 </p>
                             </div>
                             <div class="ml-auto pl-3">
@@ -88,10 +88,10 @@
                         x-on:livewire-upload-error="isUploading = false"
                         x-on:livewire-upload-progress="progress = $event.detail.progress">
 
-                        <input wire:model.defer="photo" type="file" name="photo">
+                        <input wire:model="photo" type="file" name="photo">
                         @error('photo')
-                        <p class="text-red-500 mt-1">{{ $message }}</p>
-                    @enderror
+                            <p class="text-red-500 mt-1">{{ $message }}</p>
+                        @enderror
 
                     <!-- Progress Bar -->
                         <div class="mt-4" x-show="isUploading">
@@ -111,9 +111,9 @@
 
                         <div class="mt-4">
                             @if ($photo)
-                                <img src="{{ $photo->temporaryUrl() }}" alt="temp">
+                                <img src="{{ $photo->temporaryUrl() }}" alt="temp" />
                             @elseif ($post->photo)
-                                <img src="{{ Storage::url($post->photo) }}" alt="cover image">
+                                <img src="{{ Storage::url($post->photo) }}" alt="cover image" />
                             @endif
                         </div>
 

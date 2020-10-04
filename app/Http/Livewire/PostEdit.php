@@ -3,6 +3,7 @@
 namespace App\Http\Livewire;
 
 use App\Models\Post;
+use Illuminate\Support\Arr;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 use Illuminate\Http\UploadedFile;
@@ -16,10 +17,12 @@ class PostEdit extends Component
     public string $content;
     public $photo = null;
     public string $successMessage = '';
+    public $uploadFileExt;
+    private ?array $allowedExt = [];
 
-    protected array $rules = [
+    protected $rules = [
         'title' => 'required',
-        'content' => 'required|min:4',
+        'content' => 'required',
         'photo' => 'nullable|sometimes|image|max:5000',
     ];
 
@@ -28,11 +31,24 @@ class PostEdit extends Component
         $this->post = $post;
         $this->title = $post->title;
         $this->content = $post->content;
+        $this->allowedExt = ['jpeg', 'jpg', 'png'];
     }
 
-    public function submitForm()
+    public function updatedPhoto()
     {
         $this->validate();
+    }
+
+    /**
+     *To process edit submit form of post
+     * @return void
+     */
+    public function submitForm():void
+    {
+
+
+        $this->validate();
+
         $imageToShow = $this->post->photo ?? null;
 
         $this->post->update([
@@ -44,6 +60,10 @@ class PostEdit extends Component
         $this->successMessage = 'Post was updated successfully!';
     }
 
+    /**
+     *
+     * @return view
+     */
     public function render()
     {
 
