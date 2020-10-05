@@ -16,13 +16,13 @@ class PostEdit extends Component
     public Post $post;
     public string $title;
     public string $content;
-    public $photo = null;
+    public $photo;
     public string $successMessage = '';
-    public $uploadFileExt;
+    public ?string $uploadFileExt;
     private ?array $allowedExt = ['jpeg', 'jpg', 'png'];
-    public $tempUrl = "";
+    public string $tempUrl = "";
 
-    protected $rules = [
+    protected array $rules = [
         'title' => 'required',
         'content' => 'required',
         'photo' => 'nullable|sometimes|image|max:5000',
