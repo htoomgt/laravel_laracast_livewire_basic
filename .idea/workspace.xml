@@ -23,9 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b3e9362-0add-4767-9307-a92900910fe8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/TagsComponents.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/TagsComponents.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/TagsComponentTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/TagsComponentTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/PostEdit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/PostEdit.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -243,10 +243,10 @@
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="1990" y="246" key="run.anything.popup/0.339.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1601840242004" />
-    <state x="1852" y="90" width="945" height="989" key="search.everywhere.popup" timestamp="1601850042004">
+    <state x="1852" y="90" width="945" height="989" key="search.everywhere.popup" timestamp="1601859234942">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="346" y="401" width="672" height="678" key="search.everywhere.popup/0.339.1366.741/1366.0.1920.1080@0.339.1366.741" timestamp="1601803243987" />
-    <state x="1852" y="90" width="945" height="989" key="search.everywhere.popup/0.339.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1601850042004" />
+    <state x="1852" y="90" width="945" height="989" key="search.everywhere.popup/0.339.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1601859234942" />
   </component>
 </project>
